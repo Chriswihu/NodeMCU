@@ -8,18 +8,21 @@ union()
             {
                 union()
                 {
-                    linear_extrude(height = 3.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                    linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                     {
-                        scale([40.0, 3.0])
+                        scale([99.0, 5.0])
                         {
                             M52();
                         }
                     }
-                    linear_extrude(height = 3.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                    rotate([0.0, 0.0, 90.0])
                     {
-                        scale([3.0, 40.0])
+                        linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                         {
-                            M52();
+                            scale([99.0, 5.0])
+                            {
+                                M52();
+                            }
                         }
                     }
                 }
@@ -27,18 +30,21 @@ union()
                 {
                     union()
                     {
-                        linear_extrude(height = 3.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                        linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                         {
-                            scale([40.0, 3.0])
+                            scale([99.0, 5.0])
                             {
                                 M52();
                             }
                         }
-                        linear_extrude(height = 3.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                        rotate([0.0, 0.0, 90.0])
                         {
-                            scale([3.0, 40.0])
+                            linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                             {
-                                M52();
+                                scale([99.0, 5.0])
+                                {
+                                    M52();
+                                }
                             }
                         }
                     }
@@ -46,25 +52,25 @@ union()
             }
             difference()
             {
-                linear_extrude(height = 3.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                 {
                     scale([15.0, 15.0])
                     {
                         M51();
                     }
                 }
-                linear_extrude(height = 4.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                linear_extrude(height = 6.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                 {
-                    scale([5.0, 5.0])
+                    scale([8.0, 8.0])
                     {
                         M51();
                     }
                 }
             }
         }
-        linear_extrude(height = 4.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+        linear_extrude(height = 6.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
         {
-            scale([5.0, 5.0])
+            scale([8.0, 8.0])
             {
                 M51();
             }
@@ -72,16 +78,16 @@ union()
     }
     difference()
     {
-        linear_extrude(height = 6.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+        linear_extrude(height = 20.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
         {
-            scale([41.0, 41.0])
+            scale([100.0, 100.0])
             {
                 M107();
             }
         }
-        linear_extrude(height = 7.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+        linear_extrude(height = 21.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
         {
-            scale([36.0, 36.0])
+            scale([95.0, 95.0])
             {
                 M107();
             }
