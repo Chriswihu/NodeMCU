@@ -9,9 +9,10 @@ public class CarWheel {
     //Wheel parametre
     private static double wheelRadius = 100;
     private static double wheelThickness = 20;
+    private static double wheelWidth = 15;
     private static double wheelSpoolRadius = 15;
-    private static double wheelSpoolThickness = 5;
-    private static double wheelConnectRadius = 8;
+    private static double wheelSpoolThickness = 8;
+    private static double wheelConnectRadius = 10;
     private static double wheelTreadThickness = 5;
 
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class CarWheel {
 
         //Cylinder Wheel
         Geometry3D rubber = csg.cylinder3D(wheelRadius, wheelThickness, 64, true);
-        Geometry3D rubberCut = csg.cylinder3D(wheelRadius-5, wheelThickness+1, 64, true);
+        Geometry3D rubberCut = csg.cylinder3D(wheelRadius-wheelWidth, wheelThickness+1, 64, true);
         rubber = csg.difference3D(rubber, rubberCut);
 
         //Spool and connect parametre
@@ -44,13 +45,13 @@ public class CarWheel {
         Geometry3D tread90 = csg.rotate3DZ(csg.degrees(90)).transform(tread);
 
         //4-legged tread parametre
-//		Geometry3D treads = csg.union3D(tread1, tread90);
+		Geometry3D treads = csg.union3D(tread, tread90);
 
         //8-legged tread parametre
-        Geometry3D treads = csg.union3D(tread, tread90);
-        Geometry3D treads45 = csg.union3D(tread, tread90);
-        treads45 = csg.rotate3DZ(csg.degrees(45)).transform(treads45);
-        treads = csg.union3D(treads, treads45);
+//        Geometry3D treads = csg.union3D(tread, tread90);
+//        Geometry3D treads45 = csg.union3D(tread, tread90);
+//        treads45 = csg.rotate3DZ(csg.degrees(45)).transform(treads45);
+//        treads = csg.union3D(treads, treads45);
 
         //12-legged tread parametre
 //		Geometry3D treads = csg.union3D(tread, tread90);

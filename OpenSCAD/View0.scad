@@ -6,7 +6,14 @@ union()
         {
             union()
             {
-                union()
+                linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                {
+                    scale([99.0, 5.0])
+                    {
+                        M52();
+                    }
+                }
+                rotate([0.0, 0.0, 90.0])
                 {
                     linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                     {
@@ -15,62 +22,29 @@ union()
                             M52();
                         }
                     }
-                    rotate([0.0, 0.0, 90.0])
-                    {
-                        linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
-                        {
-                            scale([99.0, 5.0])
-                            {
-                                M52();
-                            }
-                        }
-                    }
-                }
-                rotate([0.0, 0.0, 45.0])
-                {
-                    union()
-                    {
-                        linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
-                        {
-                            scale([99.0, 5.0])
-                            {
-                                M52();
-                            }
-                        }
-                        rotate([0.0, 0.0, 90.0])
-                        {
-                            linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
-                            {
-                                scale([99.0, 5.0])
-                                {
-                                    M52();
-                                }
-                            }
-                        }
-                    }
                 }
             }
             difference()
             {
-                linear_extrude(height = 5.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                linear_extrude(height = 8.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                 {
                     scale([15.0, 15.0])
                     {
                         M51();
                     }
                 }
-                linear_extrude(height = 6.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+                linear_extrude(height = 9.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
                 {
-                    scale([8.0, 8.0])
+                    scale([10.0, 10.0])
                     {
                         M51();
                     }
                 }
             }
         }
-        linear_extrude(height = 6.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
+        linear_extrude(height = 9.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
         {
-            scale([8.0, 8.0])
+            scale([10.0, 10.0])
             {
                 M51();
             }
@@ -87,7 +61,7 @@ union()
         }
         linear_extrude(height = 21.0, twist = 0.0, scale = 1.0, slices = 1, center = true)
         {
-            scale([95.0, 95.0])
+            scale([85.0, 85.0])
             {
                 M107();
             }
