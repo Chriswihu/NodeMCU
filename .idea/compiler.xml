@@ -8,7 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JavaMavenProjectTemplate" />
         <module name="JavaCSGTemplate" />
+        <module name="AbstracticaProjectTemplate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="NodeMCU" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
